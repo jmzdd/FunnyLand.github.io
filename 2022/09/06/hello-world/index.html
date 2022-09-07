@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
   <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script src="/js/jquery-2.0.3.min.js"></script>
 
   <!-- analytics -->
@@ -122,6 +122,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	</div> <!-- col-md-9/col-md-12 -->
 	
   </div><!-- row -->
+
+
+	  <div style="margin-top: 5px;" id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '3vOgtwiShLUYt0gLW1BpDFvo-MdYXbMMI',
+            appKey: 'oJnCIjRdmRt4LSmGYV3vs1O4',
+            path: window.location.pathname
+        })
+    </script>
 
 	</div>
   </div>
